@@ -2,37 +2,103 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  padding: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
+  padding: 20px;
+  background-color:#FF8C00 ;
+  height: 65px;
+  justify-content: space-sp;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  drop-shado:(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
 }
 
-.App-link {
-  color: #61dafb;
+.nav img{
+  height: 100%;
+  margin-right: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav h1{
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.memeForm{
+  display: grid;
+  grid-template: 50px 50px / 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.formInput{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 14px;
+  color: #0D0D0D;
+}
+
+.searchBtn{
+  grid-column: 1 /-1;
+  background: linear-gradient(90.41deg, #0E6BA8 1.14%, #18A8DA 100%);
+  border-radius: 5px;    
+  font-family: "Karla", sans-serif;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+
+
+
+}
+
+.memeImage {
+  max-width: 100%;
+}
+
+.meme {
+  position: relative;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+    font-size: calc(1.5em + 1vw); /* Adjust the size using a calculation */
+}
+
+.memeTextTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 1.5em
+}
+
+.memeTextBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5em
 }
